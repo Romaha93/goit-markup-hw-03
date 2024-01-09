@@ -9,11 +9,57 @@ body {
         background-color: #FFFFFF;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+p ,h1,h2,h3,h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+img {
+    display: block;
+}
+
 
 /**---------------*/
 
 
 /**-------header--------*/
+
+.header {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    padding-left: 156px;
+    padding-right: 156px;
+    border-bottom: 1px solid #E7E9FC;
+
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+   
+    }
+
+
 .header-logo {
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
@@ -22,6 +68,7 @@ body {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        
 }
 
 .header-logo-studio {
@@ -33,6 +80,19 @@ body {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+}
+
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-navigation-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
 }
 
 .header-navigation-link {
@@ -59,6 +119,12 @@ body {
     font-style: normal;
 }
 
+.header-address-list {
+    display: flex;
+    gap: 40px;
+    
+}
+
 .header-address-link {
     color: #434455;
     font-size: 16px;
@@ -74,6 +140,7 @@ body {
     color: #404BBF;
 }
 
+
 /**---------------*/
 
 
@@ -83,6 +150,14 @@ body {
     background-color: #2E2F42;
 }
 
+.hero-container {
+    padding: 176px 472px 188px 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .hero-title { 
 color: #FFF;
 font-size: 56px;
@@ -90,6 +165,12 @@ font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 48px;
+max-width: 496px;
+}
+
+.btn-container {
+   
 }
 
 .hero-button {
@@ -101,6 +182,11 @@ text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: #4D5AE5;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+
+
 }
 
 .hero-button:hover {
@@ -116,8 +202,39 @@ text-align: center;
 
 /**----------second layer---------- */
 
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    padding-left: 156px;
+    padding-right: 156px;
+ 
+
+}
+
+.features-item {
+    width: 264px;
+   
+}
 
 .features-title {
     color: #2E2F42;
@@ -125,7 +242,7 @@ text-align: center;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -142,6 +259,14 @@ text-align: center;
 
 .team {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 156px;
+    padding-left: 156px;
+}
+
+.team-container {
+   
 }
 
 .team-title {
@@ -152,15 +277,29 @@ text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         text-align: center;
+        margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .team-item {
     background-color: #FFF;
+    padding-bottom: 32px;
+    width: 264px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.team-img {}
+.team-img {
+    margin-bottom: 32px;
+}
 
 .team-item-title {
     color: #2E2F42;
@@ -168,6 +307,7 @@ text-align: center;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 
 .team-text {
