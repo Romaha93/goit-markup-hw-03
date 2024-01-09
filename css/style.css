@@ -39,13 +39,11 @@ img {
     padding-left: 156px;
     padding-right: 156px;
     border-bottom: 1px solid #E7E9FC;
-    margin-top: ;
 
 }
 
 .container {
-    max-width: 1158px;
-    width: 100%;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px ;
 }
