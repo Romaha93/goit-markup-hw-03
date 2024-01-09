@@ -92,12 +92,12 @@ img {
 .header-navigation-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
     
 }
 
 .header-navigation-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
 }
 
 .header-navigation-link {
